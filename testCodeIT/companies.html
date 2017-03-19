@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Companies</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/moment.min.js"></script>
+  <script src="js/amcharts.js"></script>
+  <script src="js/serial.js"></script>
+  <script src="js/pie.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+        <div class="panel panel-default">
+          <div class="panel-heading">Total Companies</div>
+            <div class="panel-body">
+              <div class = "loader">
+                <img src="img/loader.gif">
+              </div>
+          <div id="total-comp"></div>
+            </div>
+        </div>
+      </div>
+    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+      <div class="panel panel-default">
+        <div class="panel-heading">List of Companies</div>
+          <div class="panel-body">
+            <div id="companyies">
+              <div class = "loader">
+                <img src="img/loader.gif">
+              </div>
+            <ul type="none"></ul>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="partners" class="col-xs-10 col-xs-offset-1 col-md-12 col-md-offset-0">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="container row">
+            <div class="row col-xs-12 col-sm-6">
+              Company partners
+            </div>
+            <div class="row col-xs-12 col-sm-6 text-right">
+              <span>Sort by </span>
+              <span class="btn" id="percent-up">% <i class="glyphicon glyphicon-arrow-up"></i></span>|
+              <span class="btn" id="percent-down">% <i class="glyphicon glyphicon-arrow-down"></i></span>|
+              <span class="btn" id="name-up">Name <i class="glyphicon glyphicon-arrow-up"></i></span>|
+              <span class="btn" id="name-down">Name <i class="glyphicon glyphicon-arrow-down"></i></span>
+            </div>
+          </div>
+        </div>
+          <div class = "loader">
+            <img src="img/loader.gif">
+          </div>
+        <div class="panel-body">
+          <div id="chartpartners"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+    <div class="container">
+      <div class="row">
+        <div id="location" class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="container row">
+                <div class="row col-xs-11 col-md-4">
+                  Companies by Location
+                </div>
+                <div class="row col-xs-1 col-md-2 text-right">
+                  <span class="btn" id="backtoform"> <i class="glyphicon glyphicon-arrow-left"></i> Back</span>
+                </div>
+              </div>
+            </div>
+            <div class = "loader">
+              <img src="img/loader.gif">
+            </div>
+            <div class="panel-body">
+              <div id="charlocation"></div>
+              <div id="listlocation">
+                <ul type="none"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+          <div class="panel panel-default">
+            <div class="panel-heading">News</div>
+            <div class = "loader">
+              <img src="img/loader.gif">
+            </div>
+            <div class="panel-body">
+              <div id="carousel-news" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner"></div>
+                <div>
+                  <ol class="carousel-indicators"></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slimscroll.min.js"></script>
+  <script src="js/company.js"></script>
+</body>
+</html>
