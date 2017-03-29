@@ -31,18 +31,6 @@ $('#companyies').slimscroll({
     railOpacity: .9,
     wheelStep: 10
 });
-// scroll
-$('#companyies').slimscroll({
-    height: '200px',
-    color: '#330a2e',
-    opacity: 0.8,
-    size: '14px',
-    alwaysVisible: true,
-    railVisible: true,
-    railColor: '#a24195',
-    railOpacity: .9,
-    wheelStep: 10
-});
 
 $(function() {
     // companies

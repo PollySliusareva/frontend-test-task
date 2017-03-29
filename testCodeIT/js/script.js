@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
     $("#form").validate({
-
        rules:{
             name:{
                 required: true,
@@ -44,23 +43,20 @@ $(document).ready(function(){
                  error.insertAfter(element.parent());
              }
          },
+      submitHandler: function submitForm() {
+           var msg = $('#form').serialize();
+                 $.ajax({
+                   type: 'POST',
+                   url: 'http://codeit.pro/frontTestTask/user/registration',
+                   data: msg,
+         		  success: function(data) {
+         			  $("#messageRes").empty().append(data.message);
+         			if(data.status == "OK"){window.location.replace("companies.html");}
+                   },
+                   error:  function(){
+         			alert('Error');
+                   }
+                 });
+        },
     });
-    });
-
-    function submitForm() {
-     	var msg = $('#form').serialize();
-            $.ajax({
-              type: 'POST',
-              url: 'http://codeit.pro/frontTestTask/user/registration',
-              data: msg,
-    		  success: function(data) {
-    			alert(data.message);
-    			if(data.status == "OK"){window.location.replace("companies.html");}
-    			$.getJSON('http://codeit.pro/frontTestTask/user/registration', function(data) {
-    		  });
-              },
-              error:  function(){
-    			alert('Error');
-              }
-            });
-    }
+  });

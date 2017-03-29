@@ -10,6 +10,10 @@
 .btn-success{
   float: right;
 }
+#messageRes{
+  margin-top: 5px;
+  text-align: center;
+}
 
 .loader img{
   display: block;
@@ -45,6 +49,7 @@
 
 #companyies ul{
   padding-left: 0;
+  list-style-type: none;
 }
 
 #companyies ul:last-child{
@@ -90,7 +95,9 @@ li.active {
   overflow-y: auto;
   height: 230px;
 }
-
+#listlocation ul{
+  list-style-type: none;
+}
 .news-img {
   overflow: hidden;
   height: 180px;
